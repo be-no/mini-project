@@ -1,0 +1,30 @@
+/* Styling */
+body {
+    color: white;
+    margin: 0 auto;
+    font-family: 'Avenir', sans-serif; 
+}
+
+div {
+    padding: 450px;
+    text-align: center;
+}
+
+#tsuki {
+    height: 100px;
+    width: 100px;
+    display: block;
+    padding: 50px 100px 0 100px;
+    position: absolute;
+}
+
+.animate {
+    animation: move 5s linear infinite;
+}
+
+/* Animate pet while it's alive */
+@keyframes move {
+    0% {left:0;}
+    50% {left:calc(88% - 100px);}
+    100% {left:0;}
+}
